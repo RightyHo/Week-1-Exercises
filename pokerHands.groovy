@@ -168,7 +168,49 @@ boolean isFullHouse(String r1, String r2, String r3, String r4, String r5){
 	int num4 = setCardNum(r4)
 	int num5 = setCardNum(r5)
 	//check for full house
-	
+	if(tripTest(num1,num2,num3)){
+		if(num4 == num5){
+			return true
+		}
+	} else if(tripTest(num1,num2,num4)){
+		if(num3 == num5){
+			return true
+		}
+	} else if(tripTest(num1,num2,num5)){
+		if(num3 == num4){
+			return true
+		}
+	} else if(tripTest(num1,num3,num4)){
+		if(num2 == num5){
+			return true
+		}
+	} else if(tripTest(num1,num3,num5)){
+		if(num2 == num4){
+			return true
+		}
+	} else if(tripTest(num1,num4,num5)){
+		if(num2 == num3){
+			return true
+		}
+	} else if(tripTest(num2,num3,num4)){
+		if(num1 == num5){
+			return true
+		}
+	} else if(tripTest(num2,num3,num5)){
+		if(num1 == num4){
+			return true
+		}
+	} else if(tripTest(num2,num4,num5)){
+		if(num1 == num3){
+			return true
+		}
+	} else if(tripTest(num3,num4,num5)){
+		if(num1 == num2){
+			return true
+		}
+	} else {
+		return false
+	}
 }
 
 //Start of main program
