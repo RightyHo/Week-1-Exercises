@@ -153,7 +153,7 @@ boolean isPoker(String r1, String r2, String r3, String r4, String r5){
 	int num4 = setCardNum(r4)
 	int num5 = setCardNum(r5)
 	//figure out if there are 4 of a kind 	
-	if(is4oK(num1,num2,num3,num4)||is4OK(num1,num2,num3,num5)||is4OK(num1,num2,num4,num5)||is4OK(num1,num3,num4,num5)||is4OK(num2,num3,num4,num5)){
+	if(is4oK(num1,num2,num3,num4)||is4oK(num1,num2,num3,num5)||is4oK(num1,num2,num4,num5)||is4oK(num1,num3,num4,num5)||is4oK(num2,num3,num4,num5)){
 		return true
 	} else {
 		return false
