@@ -213,6 +213,17 @@ boolean isFullHouse(String r1, String r2, String r3, String r4, String r5){
 	}
 }
 
+boolean isTwoPair(String r1, String r2, String r3, String r4, String r5){
+	//convert cards to integers
+	int num1 = setCardNum(r1)
+	int num2 = setCardNum(r2)	
+	int num3 = setCardNum(r3)
+	int num4 = setCardNum(r4)
+	int num5 = setCardNum(r5)
+	//check for two pair
+	
+}
+
 //Start of main program
 String bestHand = "",  rank1 = "",  rank2 = "",  rank3 = "",  rank4 = "",  rank5 = "", suit1 = "", suit2 = "", suit3 = "", suit4 = "", suit5 = ""
 
@@ -246,16 +257,16 @@ for(i = 1; i <= 5; i++){
 	}
 }
 
-println "rank1: " + rank1			//test to check variables are being assigned correctly
-println "rank2: " + rank2			//test to check variables are being assigned correctly
-println "rank3: " + rank3			//test to check variables are being assigned correctly
-println "rank4: " + rank4			//test to check variables are being assigned correctly
-println "rank5: " + rank5			//test to check variables are being assigned correctly
-println "suit1: " + suit1			//test to check variables are being assigned correctly
-println "suit2: " + suit2			//test to check variables are being assigned correctly
-println "suit3: " + suit3			//test to check variables are being assigned correctly
-println "suit4: " + suit4			//test to check variables are being assigned correctly
-println "suit5: " + suit5			//test to check variables are being assigned correctly
+//println "rank1: " + rank1			//test to check variables are being assigned correctly
+//println "rank2: " + rank2			//test to check variables are being assigned correctly
+//println "rank3: " + rank3			//test to check variables are being assigned correctly
+//println "rank4: " + rank4			//test to check variables are being assigned correctly
+//println "rank5: " + rank5			//test to check variables are being assigned correctly
+//println "suit1: " + suit1			//test to check variables are being assigned correctly
+//println "suit2: " + suit2			//test to check variables are being assigned correctly
+//println "suit3: " + suit3			//test to check variables are being assigned correctly
+//println "suit4: " + suit4			//test to check variables are being assigned correctly
+//println "suit5: " + suit5			//test to check variables are being assigned correctly
 
 //Calculate the best hand
 if(isStraightFlush(rank1, rank2, rank3, rank4, rank5, suit1, suit2, suit3, suit4, suit5)){
